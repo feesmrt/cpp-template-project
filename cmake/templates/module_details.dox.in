@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------------------*/
+/** @addtogroup ${PROJECT_NAME}
+  * @{
+  */
+
+/** @addtogroup ${GEN_MODULE}
+  * 
+    # Overview
+
+    This file provides a detailes description of the module ${GEN_MODULE}
+    and its namespace.
+
+  */
+
+/** 
+  * @}
+  */ // ${PROJECT_NAME}
+/*---------------------------------------------------------------------------*/

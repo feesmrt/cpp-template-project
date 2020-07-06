@@ -1,0 +1,45 @@
+/**
+ * @file ${GEN_CLASS_FILE}.cpp
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Source file of ${GEN_CLASS} grouped in module ${GEN_MODULE}
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#include "${GEN_PROJ}/${GEN_MODULE}/${GEN_CLASS_FILE}.h"
+
+using namespace ${GEN_PROJ_NS};
+
+/*---------------------------------------------------------------------------*/
+/* Public Functions */
+
+${GEN_CLASS}::${GEN_CLASS}() {}
+
+bool ${GEN_CLASS}::initClass(const unsigned int my_param) {
+
+  /* Comments are only done via * and slash */
+  _my_param = my_param;
+
+  /* Class is initialized */
+  _is_initialized = true;
+
+  return true;
+}
+
+const unsigned int ${GEN_CLASS}::getMyParam() const { return _my_param; }
+
+/* !Public Functions */
+/*---------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------*/
+/* Private Functions */
+
+bool ${GEN_CLASS}::privateFunction() { return true; }
+
+/* !Private Functions */
+/*---------------------------------------------------------------------------*/

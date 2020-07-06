@@ -1,0 +1,60 @@
+/**
+ * @file version.h
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Version header file
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#pragma once
+
+namespace ${GEN_PROJ_NS} {
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup ${GEN_PROJ}
+ * @{
+ */
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup version
+ * 
+ *  This group contains the version information of the ${GEN_PROJ} project.
+ *  All data is derived from the git repository this project is build with.
+ * 
+ * @{
+ */
+
+/** \brief Major version number of project */
+constexpr unsigned int VER_MAJOR = @PROJECT_VERSION_MAJOR@;
+
+/** \brief Minor version number of project */
+constexpr unsigned int VER_MINOR = @PROJECT_VERSION_MINOR@;
+
+/** \brief Patch version number of project */
+constexpr unsigned int VER_PATCH = @PROJECT_VERSION_PATCH@;
+
+/** \brief Size of the version commit id */
+constexpr unsigned int VER_COMMIT_ID_SIZE = 8u;
+
+/** \brief Commit ID */
+constexpr char VER_COMMIT_ID[VER_COMMIT_ID_SIZE] = "@PROJECT_COMMIT_ID@";
+
+/** \brief Release build */
+constexpr bool VER_RELEASE_BUILD = @RELEASE_BUILD@;
+
+/**
+ * @}
+ */ // version
+/*---------------------------------------------------------------------------*/
+
+/**
+ * @}
+ */ // ${GEN_PROJ}
+/*---------------------------------------------------------------------------*/
+
+}; // namespace ${GEN_PROJ_NS}

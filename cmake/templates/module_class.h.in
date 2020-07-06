@@ -1,0 +1,88 @@
+/**
+ * @file ${GEN_CLASS_FILE}.h
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Header file of ${GEN_CLASS} grouped in module ${GEN_MODULE}
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#pragma once
+
+namespace ${GEN_PROJ_NS} {
+
+  /*---------------------------------------------------------------------------*/
+  /** @addtogroup ${GEN_PROJ}
+   * @{
+   */
+
+  /*---------------------------------------------------------------------------*/
+  /** @addtogroup ${GEN_MODULE}
+   * @{
+   */
+
+  /**
+   * @brief Brief description of the ${GEN_CLASS} class
+   *
+   * # Overview
+   *
+   * This class can be described via markdown language to provide a detailed
+   * documentation.
+   *
+   * # Known Issues
+   *
+   * Already known problems with the module which are not fixable or fixed
+   * in the future
+   *
+   */
+  class ${GEN_CLASS} {
+  public:
+    /**
+     * @brief Default constructor
+     */
+    ${GEN_CLASS}();
+
+    /**
+     * @brief Initializes the class
+     *
+     * @param my_param Description of the parameter
+     *
+     * @return true Initialization successful
+     * @return false Initialization failed
+     */
+    bool initClass(const unsigned int my_param);
+
+    /** \brief Get the my param which describes a param */
+    const unsigned int getMyParam() const;
+
+  private:
+    /**
+     * @brief A example of a private function
+     *
+     * @return true Success
+     * @return false Error
+     */
+    bool privateFunction();
+
+    /** \brief Example of a parametre */
+    unsigned int _my_param = 0;
+
+    /** \brief Stores init state of class */
+    bool _is_initialized = false;
+  };
+
+  /**
+   * @}
+   */ // ${GEN_MODULE}
+  /*---------------------------------------------------------------------------*/
+
+  /**
+   * @}
+   */ // ${GEN_PROJ}
+  /*---------------------------------------------------------------------------*/
+
+}; // namespace ${GEN_PROJ_NS}

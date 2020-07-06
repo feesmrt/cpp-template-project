@@ -1,0 +1,42 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "mkdir -p bin build && (cd build && cmake .. && make && mv compile_commands.json ../)",
+      "problemMatcher": "$gcc",
+      "group": "build"
+    },
+    {
+      "label": "Debug",
+      "type": "shell",
+      "command": "mkdir -p bin build && (cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make && mv compile_commands.json ../)",
+      "problemMatcher": "$gcc",
+      "group": "build"
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "mkdir -p bin build && (cd build && cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_TESTS=On .. && make)",
+      "problemMatcher": "$gcc",
+      "group": "build"
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "rm -r bin; rm -r build; rm -r docs/html",
+      "problemMatcher": "$gcc",
+      "group": "build"
+    },
+    {
+      "label": "Generate documentation",
+      "type": "shell",
+      "command": "doxygen docs/config.txt && firefox docs/html/index.html",
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}

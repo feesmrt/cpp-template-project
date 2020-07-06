@@ -1,0 +1,86 @@
+/**
+ * @file ${GEN_CLASS_FILE}_tests.cpp
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Unit tests of class ${GEN_CLASS} in module ${GEN_MODULE}
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#include <gtest/gtest.h>
+
+#include "${GEN_PROJ}/${GEN_MODULE}/${GEN_CLASS_FILE}.h"
+
+/*---------------------------------------------------------------------------*/
+/* Unit Tests */
+
+namespace ${GEN_PROJ_NS} {
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup ${GEN_PROJ}
+ * @{
+ */
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup unit_tests
+ * @{
+ */
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup ${GEN_MODULE}_tests
+ * @{
+ */
+
+/**
+ * @brief GTest class to run unit test for ${GEN_CLASS}
+ */
+class ${GEN_CLASS}UnitTests : public ::testing::Test {
+protected:
+  /**
+   * @brief Setup before test execution
+   */
+  virtual void SetUp() {}
+
+  /**
+   * @brief Teardown after test execution
+   */
+  virtual void TearDown() {}
+};
+
+/**
+ * @brief This test is used as a example test
+ */
+TEST_F(${GEN_CLASS}UnitTests, example) { FAIL() << "Implement tests for ${GEN_CLASS}!"; }
+
+/**
+ * @brief This test check if the init function is executed correctly
+ */
+TEST_F(${GEN_CLASS}UnitTests, init) {
+  ${GEN_CLASS} inst;
+
+  EXPECT_EQ(true, inst.initClass(2));
+}
+
+/**
+ * @}
+ */ // ${GEN_MODULE}_tests
+/*---------------------------------------------------------------------------*/
+
+/**
+ * @}
+ */ // unit_tests
+/*---------------------------------------------------------------------------*/
+
+/**
+ * @}
+ */ // ${GEN_PROJ}
+/*---------------------------------------------------------------------------*/
+
+}; // namespace ${GEN_PROJ_NS}
+
+/* !Unit Tests */
+/*---------------------------------------------------------------------------*/

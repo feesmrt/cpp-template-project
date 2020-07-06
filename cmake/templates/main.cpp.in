@@ -1,0 +1,33 @@
+/**
+ * @file main.cpp
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Main source file of ${GEN_PROJ}
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#include "${GEN_PROJ}/version.h"
+
+#include <iostream>
+
+/*---------------------------------------------------------------------------*/
+/* Public Functions */
+
+int main(int argc, char *argv[]) {
+  std::cout << "This is a template application of ${GEN_PROJ}" << std::endl;
+  std::cout << "Template waits for your functionality!" << std::endl;
+
+  std::cout << "Version: " << ${GEN_PROJ_NS}::VER_MAJOR << "."
+            << ${GEN_PROJ_NS}::VER_MINOR << "." << ${GEN_PROJ_NS}::VER_PATCH
+            << " Commit-ID: " << ${GEN_PROJ_NS}::VER_COMMIT_ID << std::endl;
+
+  return 0;
+}
+
+/* !Public Functions */
+/*---------------------------------------------------------------------------*/

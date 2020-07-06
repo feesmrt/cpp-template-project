@@ -1,0 +1,9 @@
+docs/html
+bin/*
+build/*
+tests/bin/*
+tests/build/*
+.clangd/
+compile_commands.json
+include/*/version.h
+.vscode/launch.json

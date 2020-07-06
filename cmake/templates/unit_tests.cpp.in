@@ -1,0 +1,57 @@
+/**
+ * @file unit_tests.cpp
+ * @author ${GEN_AUTHOR} (${GEN_MAIL})
+ *
+ * @brief Source file of main unit test code
+ *
+ * @version 0.1
+ * @date ${GEN_TODAY}
+ *
+ * @copyright Copyright (c) ${GEN_YEAR} ${GEN_COMPANY}
+ *
+ */
+
+#include <gtest/gtest.h>
+
+/*---------------------------------------------------------------------------*/
+/* Unit Tests */
+
+namespace ${GEN_PROJ_NS} {
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup ${GEN_PROJ}
+ * @{
+ */
+
+/*---------------------------------------------------------------------------*/
+/** @addtogroup unit_tests
+ * @{
+ */
+
+/**
+ * @brief Main Function for Unit Tests
+ *
+ * @param argc Number of arguments
+ * @param argv List with arguments
+ *
+ * @return int
+ */
+int main(int argc, char *argv[]) {
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
+
+/**
+ * @}
+ */ // unit_tests
+/*---------------------------------------------------------------------------*/
+
+/**
+ * @}
+ */ // ${GEN_PROJ}
+/*---------------------------------------------------------------------------*/
+
+}; // namespace ${GEN_PROJ_NS}
+
+/* !Unit Tests */
+/*---------------------------------------------------------------------------*/
