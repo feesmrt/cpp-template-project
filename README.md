@@ -91,9 +91,9 @@ project(project_name) # Place here your project name (normally root folder name)
 include(cmake/functions.cmake) # DO NOT EDIT
 
 # Author information
-set(COMPANY "Martin Bauernschmitt") # Your company name
-set(AUTHOR  "Martin Bauernschmitt") # Your name
-set(E_MAIL  "martin.bauernschmitt@posteo.de") # E-Mail
+set(COMPANY "Mustercompany") # Your company name
+set(AUTHOR  "Max Mustermann") # Your name
+set(E_MAIL  "max.mustermann@mustercompany.de") # E-Mail
 
 # License information
 set(LICENSE "BSD 3-clause") # License information
